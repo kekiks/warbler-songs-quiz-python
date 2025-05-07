@@ -1,6 +1,6 @@
 # Birdsong Quiz
 
-This app allows you to practice identifying by ear birdsong recordings from [Cornell Lab of Ornithology's Macauley Library](https://www.macaulaylibrary.org).
+This app allows you to practice identifying birds by ear using recordings from [Cornell Lab of Ornithology's Macauley Library](https://www.macaulaylibrary.org).
 
 ### important requirements
 
