@@ -64,7 +64,6 @@ def quiz_bird(mp3_file_path):
         # Convert PIL image to Tkinter format
         tk_img = ImageTk.PhotoImage(img)
         width, height = img.size
-        print(img.size)
         blank_img = Image.new('RGBA', (width, height), (0, 0, 0, 0))  # Transparent image
         blank_tk_img = ImageTk.PhotoImage(blank_img)
 
@@ -105,8 +104,11 @@ if __name__ == "__main__":
     label_credits = tk.Label(font = ("Helvetica", 10, "normal"))
     label_credits.grid(row = 4, column = 0, columnspan = 3, pady = (0, 5))
 
-    original_bird_list = glob.glob(os.path.join("sounds", '*.mp3'))
-    print(f"{original_bird_list}\n{len(original_bird_list)} birds.")
+    root.focus_force()
+
+    original_bird_list = sorted(glob.glob(os.path.join("sounds", '*.mp3')))
+#    print("\n".join(original_bird_list))
+    print(f"Soundfiles:\n  {"\n  ".join(original_bird_list)}\n{len(original_bird_list)} birds in total.")
     bird_list = original_bird_list.copy()
 
     bird = random.choice(bird_list)
