@@ -13,4 +13,6 @@ If you want to hear the sound again, click `Repeat`.
 Once you think you know you have identified the species that produced the sound, you can click `Reveal` to show a picture of the bird along with some additional information.
 When you are ready to go to the next item, click `Next`. After the app has played all the sounds in the `sounds` folder, it will start over again.
 
+Sound files purchased from the Macauley Library contain metadata, including a picture, common name, Latin name, place of recording, and recording artist. The app pulls this information directly from the sound file and presents it on screen. The app therefore only needs the soundfile as input. You can easily make custom quizzes (e.g. Spring migration warblers in your area) by only including a relevant subset of soundfiles in the `sounds/` folder.
+
 ![](app-screenshot.png)
